@@ -1,0 +1,1 @@
+git stash apply command apply the stashed data and keep most recent stash as it is but git stash pop apply the most recent changes and remove recent stassh data.
