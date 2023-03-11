@@ -36,3 +36,46 @@
     transform: rotate(360deg);
   }
 }
+
+#taskListUi {
+  margin-top: 30px;
+}
+
+input {
+  padding: 5px;
+  margin-right: 10px;
+}
+
+button {
+  padding: 5px;
+  padding-right: 10px;
+  padding-left: 10px;
+  margin: 10px;
+}
+
+ul{
+  list-style: none;
+  padding: 0px;
+}
+
+#counter {
+  font-size: 50px;
+  color: red;
+  font-weight: 500;
+}
+
+.App {
+  display: flex;
+}
+
+#taskHandlerBox {
+  margin: 30px;
+}
+
+#CounterBox {
+  margin: 30px;
+}
+
+#ChangeNameBox {
+  margin: 30px;
+}
