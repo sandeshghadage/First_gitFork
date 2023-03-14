@@ -6,8 +6,8 @@ function App() {
   return (
     <div className="App">
       <TaskList />
-      <Counter />
-      <ChangeName />
+      {/* <Counter />
+      <ChangeName /> */}
     </div>
   );
 }
