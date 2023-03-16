@@ -11,12 +11,14 @@ export default function TaskUI(props) {
       >
         {props.item}
       </div>
-      <button id="completeBtn" onClick={() => setComplete(true)}>
-        Complete
-      </button>
-      <button id="deleteBtn" onClick={() => props.delete(props.index)}>
-        X
-      </button>
+      <div id="buttonContainer">
+        <button id="completeBtn" onClick={() => setComplete(true)}>
+          Complete
+        </button>
+        <button id="deleteBtn" onClick={() => props.delete(props.index)}>
+          X
+        </button>
+      </div>
     </div>
   );
 }

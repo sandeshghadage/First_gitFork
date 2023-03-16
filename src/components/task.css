@@ -79,8 +79,8 @@
     border: none;
     border-radius: 5px;
     color: white;
-    padding-right: 2%;
-    padding-left: 2%;
+    padding-right: 3%;
+    padding-left: 3%;
 }
 
 #taskName {
@@ -94,4 +94,11 @@
     border-radius: 5px;
     color: white;
     padding: 8px;
+}
+
+#buttonContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    /* padding-left: 15%; */
 }
