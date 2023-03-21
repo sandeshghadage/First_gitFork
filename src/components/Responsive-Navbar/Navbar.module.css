@@ -1,0 +1,104 @@
+/* .navBar > * {
+    margin: 1rem;
+} */
+.logo {
+    display: flex;
+    gap: 3vw;
+}
+
+
+.navBarStart {
+    display: flex;
+    align-items: center;
+    gap: 1.5vw;
+}
+
+.navBarEnd {
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+}
+
+.mainNav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    right:0px;
+    left:0px;
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
+.body {
+    width: 100%;
+}
+
+.signUpBtn {
+    border: 2px solid #fcb025;
+    height: 20px;
+    width: 60px;
+    padding: 2vh;
+    padding-left: 0px 20px;
+    border-radius: 25px;
+    text-align: center;
+}
+
+li{
+
+    list-style-type: none;
+}
+
+.menuBtn {
+    height: 25px;
+    width: 25px;
+    position: absolute;
+    top: 25px;
+    right: 20px;
+}
+
+.menuList {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    font-size: 20px;
+    gap: 6px;
+    position: absolute;
+    top: 20px;
+    right: 30px;
+}
+
+.crossButton {
+    height: 25px;
+    width: 25px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+@media screen and (max-width: 480px) {
+    body {
+        background-color: lightgreen;
+    }
+
+    
+
+    .navBarStart {
+        display: none;
+    }
+
+    .navBarEnd {
+        display: none;
+    }
+
+    
+    
+}
+
+@media screen and (min-width: 480px) {
+
+    img {
+        display: none;
+    }
+    
+}
+
