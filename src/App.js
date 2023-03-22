@@ -7,7 +7,7 @@ import GameUi from "./components/Tic-Tac-Toe/game";
 function App() {
   return (
     <div className="App">
-      {/* <NavBar /> */}
+      <NavBar />
       <ScrollerUi />
       <GameUi />
     </div>

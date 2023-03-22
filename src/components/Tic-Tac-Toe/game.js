@@ -29,9 +29,18 @@ export default function GameUi() {
     status = "Next player is: " + (xIsNext ? "X" : "O");
   }
 
+  function resetGame() {
+    const newArr = new Array(9).fill(null);
+    setSquares(newArr);
+    console.log(newArr);
+  }
+
   return (
     <div className={style.mainBox}>
-      <div className="status">{status}</div>
+      <div className={style.status}>
+        {status}
+        {winner ? <StartAgainBtn btnClick={() => resetGame()} /> : ""}
+      </div>
       <div className={style.gameContainer}>
         <div className={style.btnRow}>
           <Button State={squares[0]} onSquareClick={() => handleClick(0)} />
@@ -49,7 +58,6 @@ export default function GameUi() {
           <Button State={squares[8]} onSquareClick={() => handleClick(8)} />
         </div>
       </div>
-      {winner ? <StartAgainBtn /> : ""}
     </div>
   );
 }

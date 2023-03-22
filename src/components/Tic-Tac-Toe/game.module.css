@@ -5,12 +5,11 @@
 }
 
 .gameContainer {
-    /* display: flex;
-    justify-content: center; */
     position: absolute;
     margin: 0;
     padding: 0;
     margin: 30px;
+    margin-top: 50px;
 }
 
 
@@ -29,11 +28,13 @@
 
 .btnRow{
     display: flex;
-    /* position: absolute;
-    margin: 0px auto; */
 }
 
 .startAgain {
     background-color: green;
     color: white;
+    width: 120px;
+    height: 30px;
+    margin: 0px 0px 20px 20px;
 }
+
