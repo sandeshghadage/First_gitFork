@@ -1,0 +1,39 @@
+
+.mainBox {
+    display: flex;
+    justify-content: center;
+}
+
+.gameContainer {
+    /* display: flex;
+    justify-content: center; */
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    margin: 30px;
+}
+
+
+.Btn {
+    min-width: 40px;
+    height: 40px;
+    border: 1px solid black;
+    margin: 0 auto;
+    padding: 3px 10px;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: green;
+}
+
+.btnRow{
+    display: flex;
+    /* position: absolute;
+    margin: 0px auto; */
+}
+
+.startAgain {
+    background-color: green;
+    color: white;
+}

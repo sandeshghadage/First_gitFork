@@ -1,0 +1,48 @@
+.scroller {
+    margin: 100px;
+    display: flex;
+    overflow: scroll;
+}
+.scroller::-webkit-scrollbar {
+    display: none;
+  }
+
+
+.mentorCard {
+    min-width: 240px;
+    min-height: 240px;
+    background-color: #f1f6fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    flex-direction: column;
+    border-radius: 15px;
+    margin: 30px;
+}
+
+.image {
+    height: 80px;
+    width: 80px;
+    background-image: url("https://images.pexels.com/photos/3370931/pexels-photo-3370931.jpeg?auto=compress&cs=tinysrgb&w=1600");
+    background-position: center;
+    background-size: cover;
+    border-radius: 40px;
+    margin-bottom: 5px;
+    
+}
+
+.MentorName {
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+}
+
+.MentorDesignation {
+    margin: 0;
+    padding: 0;
+}
+
+.MentorExp {
+    color: #7a8cde;
+}
