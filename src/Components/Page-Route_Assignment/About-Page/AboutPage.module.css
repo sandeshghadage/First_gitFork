@@ -1,0 +1,14 @@
+.mainContent {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+    text-align: left;
+    max-width: 50em;
+}
+
+.mainContent h1 {
+    font-size: 80px;
+}
