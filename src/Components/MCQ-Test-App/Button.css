@@ -1,0 +1,45 @@
+.nextBtn{
+    background-color: red;
+    font-weight: bold;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    margin-left: 35rem;
+    margin-bottom: 10px;
+    font-size: larger;
+    padding: 20px;
+    cursor: pointer;
+}
+.nextBtn:active{
+    background-color: rgb(216, 8, 8);
+}
+.submitBtn{
+    background-color: red;
+    font-weight: bold;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    margin-left: 32rem;
+    font-size: larger;
+    padding: 20px;
+    cursor: pointer;
+}
+.submitBtn:active{
+    background-color: rgb(216, 8, 8);
+}
+.resetBtn{
+    background-color: red;
+    font-weight: bold;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    position: fixed;
+    top: 25rem;
+    left: 58rem;
+    font-size: larger;
+    padding: 20px;
+    cursor: pointer;
+}
+.resetBtn:active{
+    background-color: rgb(216, 8, 8);
+}

@@ -1,0 +1,54 @@
+
+.mainBody {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: white; */
+    
+}
+
+.Container {
+    width: 700px;
+    height: 500px;
+    background-color: white;
+    margin-top: 3em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 140px;
+    border-radius: 15px;
+   
+}
+
+.container{
+    margin: auto;
+    border: 1px solid;
+    width: fit-content;
+    max-width: 40rem;
+
+    min-height: 15rem;
+    position: relative;
+    top: 12rem;
+    box-shadow: 10px 10px 5px ;
+    text-align: left;
+    padding: 30px;
+}
+label{
+    font-weight: bold;
+}
+.resetDiv{
+    border: 1px solid;
+    text-align: center;
+    border: 1px solid;
+    background-color: white;
+    width: 50rem;
+    height: 15rem;
+    position: fixed;
+    top: 15rem;
+    left: 20rem;;
+}
+
+.queNumber {
+    color: blue;
+    font-weight: 700;
+}

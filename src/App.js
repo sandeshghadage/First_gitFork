@@ -6,6 +6,7 @@ import RootLayout from "./Components/Page-Route_Assignment/RootLayout";
 import HomePage from "./Components/Page-Route_Assignment/Home-Page/HomePage";
 import AboutPage from "./Components/Page-Route_Assignment/About-Page/AboutPage";
 import LoginPage from "./Components/Page-Route_Assignment/Login-Page/LoginPage";
+import QuizePage from "./Components/MCQ-Test-App/QuizePage";
 
 const router = createBrowserRouter([
   {
@@ -23,6 +24,10 @@ const router = createBrowserRouter([
       {
         path: "/login",
         element: <LoginPage />,
+      },
+      {
+        path: "/quize",
+        element: <QuizePage />,
       },
     ],
   },
