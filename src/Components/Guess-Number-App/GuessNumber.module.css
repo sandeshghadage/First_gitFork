@@ -1,0 +1,26 @@
+.mainContainer {
+    margin-top: 15em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.input {
+    min-height: 25px;
+    width: 500px;
+}
+
+.submit {
+    margin: 30px;
+    min-height: 40px;
+    width: 130px;
+    background-color: red;
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+
+.mainContainer p {
+    color: green;
+}
