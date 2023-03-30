@@ -17,7 +17,7 @@ export default function LoginPage() {
 
   return (
     <div className={style.formContainer}>
-      {login ? (
+      {/* {login ? (
         <div className={style.registrationForm}>
           <form>
             <input placeholder="&#x2709;  Email" type="text" />
@@ -46,7 +46,9 @@ export default function LoginPage() {
             </div>
           </form>
         </div>
-      )}
+      )} */}
+
+      <h1>Welcome to home page</h1>
     </div>
   );
 }

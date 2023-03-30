@@ -6,9 +6,11 @@
     flex-direction: column;
     
     text-align: left;
-    max-width: 50em;
+    /* max-width: 50em; */
 }
 
 .mainContent h1 {
+    /* font-size: 80px; */
+    color: green;
     font-size: 80px;
 }

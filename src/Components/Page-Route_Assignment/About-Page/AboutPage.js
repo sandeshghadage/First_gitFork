@@ -3,7 +3,7 @@ import style from "./AboutPage.module.css";
 export default function AboutPage() {
   return (
     <div className={style.mainContent}>
-      <h1>Mat Simon</h1>
+      {/* <h1>Mat Simon</h1>
       <small>Age : 25 years</small>
       <small>Location : India</small>
       <p>
@@ -11,7 +11,8 @@ export default function AboutPage() {
         the user interface and user experience components of a website. This
         involves creating visually appealing and user-friendly interfaces that
         provide a seamless experience for the end user.
-      </p>
+      </p> */}
+      <h1>Welcome to About page</h1>
     </div>
   );
 }

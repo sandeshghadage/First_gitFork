@@ -8,6 +8,7 @@ import AboutPage from "./Components/Page-Route_Assignment/About-Page/AboutPage";
 import LoginPage from "./Components/Page-Route_Assignment/Login-Page/LoginPage";
 import QuizePage from "./Components/MCQ-Test-App/QuizePage";
 import GuessNumberUi from "./Components/Guess-Number-App/GuessNumber";
+import RegisterPage from "./Components/Page-Route_Assignment/Register-Page/RegisterPage";
 
 const router = createBrowserRouter([
   {
@@ -34,6 +35,10 @@ const router = createBrowserRouter([
       {
         path: "/GuessNumber",
         element: <GuessNumberUi />,
+      },
+      {
+        path: "/register",
+        element: <RegisterPage />,
       },
     ],
   },

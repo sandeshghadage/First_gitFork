@@ -7,6 +7,11 @@ body {
     justify-content: center;
 }
 
+.formContainer h1 {
+    color: green;
+    font-size: 80px;
+}
+
 .registrationForm {
     margin-top: 10em;
     width: 40em;

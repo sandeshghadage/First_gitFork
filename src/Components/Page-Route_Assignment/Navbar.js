@@ -26,6 +26,11 @@ export default function Navbar() {
                 Login
               </Link>
             </li>
+            <li>
+              <Link className={style.link} to="/register">
+                Register
+              </Link>
+            </li>
           </ul>
         </nav>
         <img
