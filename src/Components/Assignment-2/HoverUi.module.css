@@ -1,0 +1,27 @@
+
+.mainBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.eventItem {
+    border: 2px solid red;
+}
+
+thead th{
+    margin-right: 20px;
+}
+
+.tableData td{
+    padding : 20px;
+    background-color: grey;
+    color: white;
+}
+
+.tags {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    color: red;
+}
