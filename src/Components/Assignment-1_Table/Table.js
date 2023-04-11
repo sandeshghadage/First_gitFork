@@ -6,13 +6,10 @@ export default function Table() {
 
   function handleTable() {
     let random = Math.round(Math.random() * 100);
-    console.log(random);
     let t = [];
     for (let i = 1; i <= 10; i++) {
       t.push(random * i);
     }
-    console.log(t);
-
     setTable(t);
   }
 
@@ -22,7 +19,7 @@ export default function Table() {
         Change Table
       </button>
       {table.map((x, i) => (
-        <div className={style.element} id={i}>
+        <div className={style.element} key={i}>
           {x}
         </div>
       ))}

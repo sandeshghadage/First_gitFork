@@ -1,0 +1,23 @@
+
+.mainBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  tr,
+  th,
+  td {
+    border: 1px solid gray;
+    padding: 5px;
+  }
+
+  #clrBtn {
+    text-align: center;
+    cursor: pointer;
+  }

@@ -1,0 +1,91 @@
+.FormContainer {
+  height: 100vh;
+  width: 100vw;
+  background-color: lightsalmon;
+  display: flex;
+  flex-direction: column;
+}
+
+.upperBox {
+  background-color: lightgreen;
+  margin: 20px;
+  min-width: 95%;
+  min-height: 45vh;
+  display: flex;
+  justify-content: space-around;
+}
+.lowerBox {
+  margin: 20px;
+  padding: 20px;
+  background-color: lightblue;
+  min-width: 95%;
+  min-height: 50vh;
+}
+
+.formBody {
+  margin: 20px;
+  padding: 20px;
+  border: 2px solid black;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.follower {
+  margin: 20px;
+  border: 2px solid black;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.follower textarea {
+  background-color: transparent;
+  border: 2px solid black;
+  width: 80%;
+  height: 60%;
+  font-size: 20px;
+  padding: 10px;
+}
+
+/* table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  tr,
+  th,
+  td {
+    border: 1px solid gray;
+    padding: 5px;
+  } */
+
+.input {
+  width: 80%;
+  height: 10%;
+  background-color: transparent;
+  font-size: 20px;
+  padding: 5px;
+}
+
+#SubmitBtn {
+  padding: 10px;
+  background-color: lightseagreen;
+  border: none;
+  border-radius: 5px;
+  color: white;
+}
+
+#delBtn {
+  cursor: pointer;
+  text-align: center;
+}
+
+#updateBtn {
+  cursor: pointer;
+  text-align: center;
+}

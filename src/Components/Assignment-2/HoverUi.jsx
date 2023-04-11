@@ -68,7 +68,7 @@ export default function HoverUi() {
           <th>TAG</th>
         </thead>
         <tbody className={style.tableData}>
-          {data.map((x, i) => (
+          {data.map((x) => (
             <tr>
               <td>{x.time}</td>
               <td>{x.eventname}</td>
