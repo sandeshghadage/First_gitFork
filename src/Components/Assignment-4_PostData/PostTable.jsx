@@ -19,7 +19,6 @@ export default function PostTable() {
 
   function ToggleTable() {
     setIsVisible(!isVisible);
-    console.log(isVisible);
   }
 
   return (

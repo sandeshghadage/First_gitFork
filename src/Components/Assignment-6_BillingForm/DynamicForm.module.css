@@ -1,0 +1,8 @@
+.formContent {
+  display: flex;
+  gap: 2%;
+}
+
+.tableBox {
+  margin-top: 50px;
+}
