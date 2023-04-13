@@ -6,6 +6,7 @@ import Greetings from "./Components/Assignment-3/Greetings";
 import PostTable from "./Components/Assignment-4_PostData/PostTable";
 import Form from "./Components/Assignment-5_Form/Form";
 import DynamicForm from "./Components/Assignment-6_BillingForm/DynamicForm";
+import UseContext from "./Components/Assignment-7_useContext/MainFile";
 
 function App() {
   return (
@@ -15,7 +16,8 @@ function App() {
       {/* <Greetings /> */}
       {/* <PostTable /> */}
       {/* <Form /> */}
-      <DynamicForm />
+      {/* <DynamicForm /> */}
+      <UseContext />
     </>
   );
 }

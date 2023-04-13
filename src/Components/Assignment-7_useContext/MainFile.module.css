@@ -1,0 +1,55 @@
+.container {
+  background-color: grey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  gap: 1%;
+}
+
+.postListCont {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  background-color: aquamarine;
+  height: 80%;
+  width: 40%;
+  overflow: scroll;
+  border-radius: 15px;
+}
+
+.postDetailsCont {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: aquamarine;
+  height: 80%;
+  width: 40%;
+  border-radius: 15px;
+}
+
+.postItem {
+  background-color: lightgray;
+  height: 8%;
+  width: 75%;
+  margin: 2%;
+  padding: 5px;
+  border-radius: 10px;
+  border: 2px solid black;
+}
+
+.postDetalils {
+  background-color: lightgray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  border-radius: 15px;
+  height: 80%;
+  width: 75%;
+  padding: 15px;
+  border: 2px solid black;
+}
