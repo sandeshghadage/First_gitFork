@@ -13,6 +13,7 @@ export default function DynamicForm() {
     quantity: "",
   });
   const [tableData, setTableData] = useState([]);
+
   function handleAdd() {
     setDependent(dependent + "a");
 
@@ -34,20 +35,21 @@ export default function DynamicForm() {
       ["price"]: "10",
       ["quantity"]: qty,
     });
-    // console.log(product);
+    console.log(product);
 
     let x = [...tableData];
     x.push(product);
     setTableData([...x]);
-    // console.log(tableData);
+    console.log(tableData);
     setTableVisivility(true);
   }
 
   return (
-    <div>
+    <div className={style.mainBox}>
       <h2>Billing Form</h2>
-      <div>Customer Name</div>
+      <div>Customer Name :</div>
       <input
+        className={style.nameInput}
         onChange={(e) => setName(e.target.value)}
         placeholder="Customer Name"
       />
@@ -58,6 +60,7 @@ export default function DynamicForm() {
             <div className={style.productField}>
               <div>Select Product</div>
               <select
+                className={style.dropdown}
                 name="products"
                 id="products"
                 onChange={(e) => setFruit(e.target.value)}
@@ -74,6 +77,7 @@ export default function DynamicForm() {
             <div className={style.qtyField}>
               <div>Quantity</div>
               <input
+                className={style.qtyInput}
                 onChange={(e) => setQty(e.target.value)}
                 placeholder="Quantity"
                 type="number"
@@ -84,8 +88,12 @@ export default function DynamicForm() {
         </div>
       ))}
       <div>
-        <button onClick={handleAdd}>Add More Item</button>
-        <button onClick={handleBill}>Create Bill</button>
+        <button className={style.Btn} onClick={handleAdd}>
+          Add More Item
+        </button>
+        <button className={style.Btn} onClick={handleBill}>
+          Create Bill
+        </button>
       </div>
       <hr />
       {tableVisivility && (
@@ -106,14 +114,18 @@ export default function DynamicForm() {
               </tr>
             </thead>
             <tbody>
-              {tableData.map((ele) => (
-                <tr>
-                  <td>{ele.fruit1}</td>
-                  <td>{ele.quantity}</td>
-                  <td>{ele.price}</td>
-                  <td>{parseInt(ele.price) * parseInt(ele.quantity)}</td>
-                </tr>
-              ))}
+              {tableData.map((ele, i) => {
+                if (i !== 0) {
+                  return (
+                    <tr>
+                      <td>{ele.fruit1}</td>
+                      <td>{ele.quantity}</td>
+                      <td>{ele.price}</td>
+                      <td>{parseInt(ele.price) * parseInt(ele.quantity)}</td>
+                    </tr>
+                  );
+                }
+              })}
             </tbody>
           </table>
         </div>
