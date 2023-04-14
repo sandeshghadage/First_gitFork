@@ -1,0 +1,10 @@
+#navbar {
+  display: flex;
+  gap: 20px;
+}
+
+#navbar > li {
+  list-style: none;
+  text-decoration: double;
+  color: black;
+}
