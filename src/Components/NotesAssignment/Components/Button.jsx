@@ -1,5 +1,5 @@
 import React from "react";
-import style from "./../Notes.module.css";
+import style from "./../Pages/Notes.module.css";
 
 export default function Button({ value, onClick }) {
   return (

@@ -31,12 +31,20 @@ textarea {
   border-radius: 5px;
   /* margin-top: 3%; */
   margin-bottom: 1%;
-  width: 90%;
+  width: 100%;
   height: 50px;
   display: flex;
   align-items: center;
-  padding-left: 10px;
+  /* padding-left: 10px; */
   font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 30px;
+}
+
+Link {
+  text-decoration: none;
 }
 
 #btn {
@@ -50,5 +58,23 @@ textarea {
   align-items: center;
   border-radius: 25px;
   text-align: center;
+}
+
+.btn {
   margin-bottom: 3%;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  width: 90%;
+  gap: 10px;
+}
+
+#delBtn {
+  background-color: azure;
+  height: 50px;
+  width: 50px;
+  font-size: 25px;
 }
