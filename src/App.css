@@ -1,5 +1,9 @@
 .App {
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
 .App-logo {
@@ -35,4 +39,16 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+table tr td {
+  border: 2px solid black;
+  align-text: center;
+  width: 70px;
+  height: 40px;
+}
+
+button {
+  width: 40px;
+  height: 30px;
 }
