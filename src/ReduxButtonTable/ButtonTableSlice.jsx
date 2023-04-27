@@ -22,18 +22,18 @@ const initialState = {
       name: "E",
       count: 0,
     },
-    // {
-    //   name: "F",
-    //   count: 0,
-    // },
-    // {
-    //   name: "G",
-    //   count: 0,
-    // },
-    // {
-    //   name: "H",
-    //   count: 0,
-    // },
+    {
+      name: "F",
+      count: 0,
+    },
+    {
+      name: "G",
+      count: 0,
+    },
+    {
+      name: "H",
+      count: 0,
+    },
     // {
     //   name: "I",
     //   count: 0,
