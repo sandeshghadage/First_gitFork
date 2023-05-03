@@ -1,8 +1,9 @@
 import "./App.css";
 import React from "react";
+import Calculator from "./calculator/Calculator";
 
 function App() {
-  return <div></div>;
+  return <Calculator />;
 }
 
 export default App;
