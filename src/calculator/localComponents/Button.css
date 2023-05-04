@@ -1,0 +1,15 @@
+.button-wrapper {
+  height: 50px;
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  background-color: #6359d4;
+  color: rgb(250, 247, 247);
+
+  width: 250px;
+  margin: 4px;
+  border-radius: 25px;
+  padding: 1%;
+  text-align: center;
+}
