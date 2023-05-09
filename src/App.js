@@ -21,6 +21,7 @@ function App() {
         <div className="inputWithLabel">
           <div>Pixel</div>
           <input
+            id="pxlInput"
             onChange={(e) => setPixel(e.target.value)}
             value={pixel}
           ></input>
@@ -28,7 +29,11 @@ function App() {
         <HiOutlineSwitchHorizontal style={{ alignSelf: "center" }} />
         <div className="inputWithLabel">
           <div>REM</div>
-          <input onChange={(e) => setRem(e.target.value)} value={rem}></input>
+          <input
+            id="remInput"
+            onChange={(e) => setRem(e.target.value)}
+            value={rem}
+          ></input>
         </div>
       </div>
     </div>
