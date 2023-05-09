@@ -1,0 +1,14 @@
+#button {
+  width: 8rem;
+  height: 3rem;
+  margin: 1rem;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  background-color: rgb(213, 108, 108);
+  font-size: 1rem;
+}
+
+#button:hover {
+  background-color: rgb(217, 35, 35);
+}
