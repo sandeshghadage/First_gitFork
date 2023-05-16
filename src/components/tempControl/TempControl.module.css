@@ -1,0 +1,71 @@
+.controller__page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+}
+
+.main__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  border: none;
+  border-radius: 2rem;
+  width: 25%;
+  height: 70%;
+  background-color: #1c5470;
+}
+
+.temp_circle {
+  width: 20rem;
+  height: 20rem;
+  /* background-color: #0941a9; */
+  border: 2px solid white;
+  border-radius: 25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  transition: background-color 0.5s ease;
+}
+
+.controlBtn {
+  background-color: #6b6668;
+  height: 4rem;
+  width: 4rem;
+  border-radius: 4rem;
+  border: 2px solid white;
+  color: white;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.btns {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+}
+
+/* .counter {
+  
+} */
+
+.yellow {
+  background-color: yellow;
+  color: white;
+}
+.orange {
+  background-color: orangered;
+  color: white;
+}
+.red {
+  background-color: red;
+  color: white;
+}
