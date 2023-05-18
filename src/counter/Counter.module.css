@@ -1,0 +1,39 @@
+.counter__page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.mainBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 40%;
+  width: 25%;
+}
+
+.arrowIcon {
+  font-size: 8rem;
+  color: rgb(100, 100, 100);
+}
+
+.middleRow {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.counterBox {
+  font-size: 5rem;
+  font-weight: 800;
+  color: black;
+  padding: 1rem;
+  width: 5rem;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
