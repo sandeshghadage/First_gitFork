@@ -7,7 +7,19 @@ import {
   Typography,
   useThemeProps,
 } from "@mui/material";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import { db } from "../Firebase";
+import {
+  collection,
+  addDoc,
+  Timestamp,
+  query,
+  orderBy,
+  onSnapshot,
+  doc,
+  updateDoc,
+  deleteDoc,
+} from "firebase/firestore";
 
 export default function Task() {
   const [taskArr, setTaskArr] = useState([]);
@@ -15,20 +27,73 @@ export default function Task() {
   const [edit, setEdit] = useState(false);
   const [editName, setEditName] = useState();
 
-  function handleSubmit() {
-    const taskObj = {
-      task: task,
-      isEdit: false,
-    };
-    const temp = [...taskArr, taskObj];
-    setTaskArr(temp);
-    setTask(" ");
-  }
-  function handleDelete(index) {
-    const temp = [...taskArr];
-    const filtered = temp.filter((ele, ind) => index != ind);
-    setTaskArr(filtered);
-  }
+  /* function to add new task to firestore */
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      await addDoc(collection(db, "tasks"), {
+        task: task,
+        isEdit: false,
+        created: Timestamp.now(),
+      });
+      // onClose();
+    } catch (err) {
+      alert(err);
+    }
+  };
+
+  useEffect(() => {
+    const q = query(collection(db, "tasks"), orderBy("created", "desc"));
+    onSnapshot(q, (querySnapshot) => {
+      setTaskArr(
+        querySnapshot.docs.map((doc) => ({
+          id: doc.id,
+          data: doc.data(),
+        }))
+      );
+    });
+  }, []);
+
+  /* function to delete a document from firstore */
+  const handleDelete = async (id) => {
+    const taskDocRef = doc(db, "tasks", id);
+    try {
+      await deleteDoc(taskDocRef);
+    } catch (err) {
+      alert(err);
+    }
+  };
+
+  /* function to update document in firestore */
+  // const handleUpdate = async (e) => {
+  //   e.preventDefault();
+  //   const taskDocRef = doc(db, "tasks", id);
+  //   try {
+  //     await updateDoc(taskDocRef, {
+  //       title: title,
+  //       description: description,
+  //     });
+  //     onClose();
+  //   } catch (err) {
+  //     alert(err);
+  //   }
+  // };
+
+  // function handleSubmit() {
+  //   const taskObj = {
+  //     task: task,
+  //     isEdit: false,
+  //   };
+  //   const temp = [...taskArr, taskObj];
+  //   setTaskArr(temp);
+  //   setTask(" ");
+  // }
+
+  // function handleDelete(index) {
+  //   const temp = [...taskArr];
+  //   const filtered = temp.filter((ele, ind) => index != ind);
+  //   setTaskArr(filtered);
+  // }
   function handleEdit(index) {
     const temp = { ...taskArr[index] };
     temp.isEdit = true;
@@ -74,18 +139,21 @@ export default function Task() {
       </Box>
       <Stack>
         {taskArr.map((ele, index) => (
-          <span style={{ display: "flex", alignItems: "center", gap: "1rem" }}>
-            {ele.isEdit ? (
+          <span
+            key={ele.id}
+            style={{ display: "flex", alignItems: "center", gap: "1rem" }}
+          >
+            {ele.data.isEdit ? (
               <span>
                 <input onChange={(e) => setEditName(e.target.value)} />
                 <Button onClick={() => handleEditSave(index)}>Save</Button>
               </span>
             ) : (
               <Typography width={"20rem"} variant="body1" color={"white"}>
-                {ele.task}{" "}
+                {ele.data.task}{" "}
               </Typography>
             )}
-            <Button onClick={() => handleDelete(index)}>X</Button>
+            <Button onClick={() => handleDelete(ele.id)}>X</Button>
             <Button onClick={() => handleEdit(index)}>Edit</Button>
           </span>
         ))}
